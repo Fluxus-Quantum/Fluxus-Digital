@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  
+  --color-brand-green: #00C853;
+  --color-brand-dark: #050505;
+  --color-brand-surface: #0D1B16;
+  --color-brand-surface-accent: #0A0A0A;
+  --color-brand-gray: #2B2B2B;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+  }
+}
+
+.bento-card {
+  @apply bg-brand-surface border border-white/5 rounded-3xl p-8 relative overflow-hidden;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-brand-green;
+}
