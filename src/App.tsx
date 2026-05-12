@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import logo from './logo.png'
+
 import { 
   Globe, 
   ChevronDown, 
