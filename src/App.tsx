@@ -322,7 +322,7 @@ export default function App() {
               <div className="p-8 bg-brand-surface rounded-[2rem] border border-white/5">
                 <h3 className="text-xl font-bold mb-2 text-brand-text-primary">{t.pricing.starter.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{p.starter}</span>
+                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{p.starter} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">/ project</span>
                 </div>
                 <ul className="space-y-4 mb-8">
@@ -345,7 +345,7 @@ export default function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">{t.pricing.pro.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold">{p.currencySymbol}{p.pro}</span>
+                   <span className="text-4xl font-bold">{p.currencySymbol}{p.pro} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">/ project</span>
                 </div>
                 <ul className="space-y-4 mb-8">
