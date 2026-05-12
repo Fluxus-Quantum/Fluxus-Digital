@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import logo from '../Public/Logo.png
+import logo from './Public/Logo.png
 
 import { 
   Globe, 
