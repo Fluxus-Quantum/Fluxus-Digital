@@ -471,15 +471,15 @@ export default function App() {
                 <form action="https://formspree.io/f/mjgjnrep" method="POST" className="space-y-6">
                   <div>
                     <label className="block text-sm font-bold mb-2 text-brand-text-secondary">{t.footer.form.name}</label>
-                    <input name="name" type="text" required className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
+                    <input name="name" type="text" required placeholder="Juan Pérez" className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
                   </div>
                   <div>
                     <label className="block text-sm font-bold mb-2 text-brand-text-secondary">{t.footer.form.email}</label>
-                    <input name="email" type="email" required className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
+                    <input name="email" type="email" required placeholder="juan@empresa.com" className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
                   </div>
                   <div>
                     <label className="block text-sm font-bold mb-2 text-brand-text-secondary">{t.footer.form.message}</label>
-                    <textarea name="message" rows={4} required className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
+                    <textarea name="message" rows={4} required placeholder="Cuéntanos sobre tu negocio y qué necesitas..." className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-accent text-brand-text-primary outline-none" />
                   </div>
                   <button type="submit" className="w-full py-4 bg-brand-success text-white rounded-xl font-bold hover:bg-brand-accent-hover transition-all text-lg shadow-lg shadow-brand-success/20">
                     {t.footer.form.submit}
