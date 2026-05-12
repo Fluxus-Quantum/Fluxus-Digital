@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import logo from './Public/logo.png'
-
 import { 
   Globe, 
   ChevronDown, 
@@ -49,7 +47,12 @@ export default function App() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden">
-                <img src={logo}" alt="Logo" className="absolute inset-0 w-full h-full object-contain z-10" onError={(e) => e.currentTarget.style.opacity = '0'} />
+                <img 
+                  src="/logo.png" 
+                  alt="Logo" 
+                  className="absolute inset-0 w-full h-full object-contain z-10" 
+                  onError={(e) => e.currentTarget.style.opacity = '0'} 
+                />
                 <div className="w-10 h-10 bg-brand-accent rounded-xl flex items-center justify-center transform rotate-12">
                   <Zap className="text-brand-bg w-6 h-6 -rotate-12" />
                 </div>
