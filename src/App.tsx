@@ -52,7 +52,7 @@ export default function App() {
                 <img 
   src={logo} 
   alt="Logo" 
-  className="absolute inset-0 w-full h-full object-contain z-10 border-2 border-red-500" 
+  className="absolute inset-0 w-full h-full object-contain z-10" 
   onError={(e) => e.currentTarget.style.opacity = '0'} 
 />
                 <div className="w-10 h-10 bg-brand-accent rounded-xl flex items-center justify-center transform rotate-12">
