@@ -17,6 +17,7 @@ import {
   Check, 
   ShieldCheck,
   Menu,
+  Phone,
   X
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
