@@ -446,7 +446,7 @@ export default function App() {
     <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
       <Mail className="w-6 h-6" />
     </div>
-    <a href="mailto:Fluxus.Quantum@gmail.com" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
+    <a href="https://wa.me/573209403080" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-text-primary hover:text-brand-accent transition-colors">
       Fluxus.Quantum@gmail.com
     </a>
   </div>
@@ -454,7 +454,7 @@ export default function App() {
     <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
       <Phone className="w-6 h-6" />
     </div>
-    <a href="https://wa.me/573209403080" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
+    <a href="https://wa.me/573209403080" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-text-primary hover:text-brand-accent transition-colors">
       +57 320 940 3080
     </a>
   </div>
