@@ -48,7 +48,7 @@ export default function App() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden">
+              <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-xl">
                 <img 
   src={logo} 
   alt="Logo" 
