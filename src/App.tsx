@@ -441,25 +441,29 @@ export default function App() {
                     : "Don't let your competition take your customers. Let's start working on your expansion today."}
                 </p>
                 <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
-                      <Mail className="w-6 h-6" />
-                    </div>
-<a href="mailto:Fluxus.Quantum@gmail.com" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
-  Fluxus.Quantum@gmail.com
-</a>
-<br />
-<a href="https://wa.me/573209403080" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
-  +57 320 940 3080
-</a>                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
-                      <Globe className="w-6 h-6" />
-                    </div>
-                    <span className="font-bold text-brand-text-primary">Global Presence: LATAM | USA | EU</span>
-                  </div>
-                </div>
-              </div>
+  <div className="flex items-center gap-4">
+    <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
+      <Mail className="w-6 h-6" />
+    </div>
+    <a href="mailto:Fluxus.Quantum@gmail.com" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
+      Fluxus.Quantum@gmail.com
+    </a>
+  </div>
+  <div className="flex items-center gap-4">
+    <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
+      <Phone className="w-6 h-6" />
+    </div>
+    <a href="https://wa.me/573209403080" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-text-primary underline decoration-brand-accent/30 decoration-2 underline-offset-4">
+      +57 320 940 3080
+    </a>
+  </div>
+  <div className="flex items-center gap-4">
+    <div className="w-12 h-12 bg-brand-surface flex items-center justify-center rounded-2xl text-brand-accent border border-white/5">
+      <Globe className="w-6 h-6" />
+    </div>
+    <span className="font-bold text-brand-text-primary">Global Presence: LATAM | USA | EU</span>
+  </div>
+</div>
               
               <div className="bg-brand-surface p-10 rounded-[2.5rem] border border-white/5">
                 <form action="https://formspree.io/f/mjgjnrep" method="POST" className="space-y-6">
