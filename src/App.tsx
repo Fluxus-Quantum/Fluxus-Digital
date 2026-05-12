@@ -465,6 +465,7 @@ export default function App() {
     <span className="font-bold text-brand-text-primary">Global Presence: LATAM | USA | EU</span>
   </div>
 </div>
+  </div>
               
               <div className="bg-brand-surface p-10 rounded-[2.5rem] border border-white/5">
                 <form action="https://formspree.io/f/mjgjnrep" method="POST" className="space-y-6">
