@@ -241,16 +241,44 @@ useEffect(() => {
                     <div className="w-3 h-3 rounded-full bg-yellow-400" />
                     <div className="w-3 h-3 rounded-full bg-green-400" />
                   </div>
-                  <div className="space-y-6">
-                    <div className="h-4 w-3/4 bg-brand-bg/50 rounded-full animate-pulse" />
-                    <div className="h-32 w-full bg-brand-accent/5 rounded-xl border border-dashed border-brand-accent/20 flex items-center justify-center">
-                      <TrendingUp className="text-brand-accent w-12 h-12" />
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="h-12 bg-brand-bg/30 rounded-lg" />
-                      <div className="h-12 bg-brand-bg/30 rounded-lg" />
-                    </div>
-                  </div>
+                  <div className="space-y-4">
+  <div className="flex items-center justify-between mb-2">
+    <span className="text-xs font-bold text-brand-text-secondary uppercase tracking-widest">Resumen del mes</span>
+    <span className="text-xs text-brand-accent font-bold">↑ +34%</span>
+  </div>
+  <div className="grid grid-cols-2 gap-3">
+    <div className="bg-brand-bg/50 rounded-xl p-3">
+      <div className="text-[10px] text-brand-text-secondary font-bold uppercase mb-1">Visitas</div>
+      <div className="text-2xl font-black text-brand-text-primary">12.4K</div>
+      <div className="text-[10px] text-brand-success mt-1">↑ +18%</div>
+    </div>
+    <div className="bg-brand-bg/50 rounded-xl p-3">
+      <div className="text-[10px] text-brand-text-secondary font-bold uppercase mb-1">Leads</div>
+      <div className="text-2xl font-black text-brand-text-primary">348</div>
+      <div className="text-[10px] text-brand-success mt-1">↑ +42%</div>
+    </div>
+    <div className="bg-brand-bg/50 rounded-xl p-3">
+      <div className="text-[10px] text-brand-text-secondary font-bold uppercase mb-1">Conversión</div>
+      <div className="text-2xl font-black text-brand-accent">8.3%</div>
+      <div className="text-[10px] text-brand-success mt-1">↑ +2.1%</div>
+    </div>
+    <div className="bg-brand-bg/50 rounded-xl p-3">
+      <div className="text-[10px] text-brand-text-secondary font-bold uppercase mb-1">ROI</div>
+      <div className="text-2xl font-black text-brand-text-primary">3.8x</div>
+      <div className="text-[10px] text-brand-success mt-1">↑ +0.6x</div>
+    </div>
+  </div>
+  <div className="bg-brand-bg/50 rounded-xl p-3">
+    <div className="text-[10px] text-brand-text-secondary font-bold uppercase mb-2">Tráfico semanal</div>
+    <div className="flex items-end gap-1 h-10">
+      {[40, 65, 45, 80, 60, 90, 75].map((h, i) => (
+        <div key={i} className="flex-1 bg-brand-accent/30 rounded-sm" style={{ height: `${h}%` }}>
+          <div className="w-full bg-brand-accent rounded-sm" style={{ height: `${i === 5 ? 100 : 60}%` }} />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
                 </motion.div>
                 
                 {/* Float elements */}
