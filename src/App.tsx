@@ -33,6 +33,26 @@ export default function App() {
   const t = CONTENT[lang];
   const p = PRICING[currency];
 
+const [prices, setPrices] = useState({ starter: 167, pro: 417 });
+
+useEffect(() => {
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vT82SBTDh05FNu7JoVPwuLDXrJZ0le_pK7ho6nj1EHtb14_dTx_yuiPFx10DhurkfTPIbBt2z5ON38M/pub?gid=0&single=true&output=csv')
+    .then(res => res.text())
+    .then(csv => {
+      const rows = csv.split('\n').slice(1);
+      const data: Record<string, Record<string, number>> = {};
+      rows.forEach(row => {
+        const [plan, usd, eur, cop] = row.split(',');
+        if (plan) data[plan.trim()] = { USD: Number(usd), EUR: Number(eur), COP: Number(cop) };
+      });
+      setPrices({
+        starter: data.starter?.[currency] ?? 167,
+        pro: data.pro?.[currency] ?? 417
+      });
+    })
+    .catch(() => {});
+}, [currency]);
+  
   // Auto-cycle hero variations for A/B testing demo feel
   useEffect(() => {
     const timer = setInterval(() => {
@@ -322,7 +342,7 @@ export default function App() {
               <div className="p-8 bg-brand-surface rounded-[2rem] border border-white/5">
                 <h3 className="text-xl font-bold mb-2 text-brand-text-primary">{t.pricing.starter.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{p.starter} {currency}</span>
+                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{prices.starter} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">{lang === 'es' ? '/ pago único' : '/ one-time'}</span>
                 </div>
                 <ul className="space-y-4 mb-8">
@@ -345,7 +365,7 @@ export default function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">{t.pricing.pro.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold">{p.currencySymbol}{p.pro} {currency}</span>
+                   <span className="text-4xl font-bold">{p.currencySymbol}{prices.pro} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">{lang === 'es' ? '/ pago único' : '/ one-time'}</span>
                 </div>
                 <ul className="space-y-4 mb-8">
