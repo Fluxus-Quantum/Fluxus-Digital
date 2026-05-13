@@ -120,17 +120,17 @@ export const CONTENT = {
       microcopy: 'Precios adaptados según tu moneda para mayor claridad y transparencia.',
       starter: {
         name: 'Starter',
-        features: ['Landing Page Pro', 'SEO Básico', '2 Redes Sociales', 'Soporte vía Email'],
+        features: ['Landing Page Básica', 'SEO Básico', '1 Redes Sociales', 'Soporte vía eMail'],
         cta: 'Elegir Starter',
       },
       pro: {
         name: 'Pro (Más popular)',
-        features: ['Web Completa', 'Google/Meta Ads ready', '4 Redes Sociales', 'Catálogo Digital', 'Soporte Priority'],
+        features: ['Landing Page PRO', 'SEO PRO', '2 Redes Sociales', 'Catálogo Digital', 'Soporte con Prioridad'],
         cta: 'Elegir Pro',
       },
       premium: {
         name: 'Premium',
-        features: ['Estrategia Integral', 'Automatización de Leads', 'Consultoría de Ventas', 'Marketing de Contenidos', 'Account Manager Dedicado'],
+        features: ['Estrategia Integral', 'Automatización de Leads', 'Consultoría de Ventas', 'Marketing de Contenidos', 'Account Manager'],
         cta: 'Contactar para cotización',
       },
     },
