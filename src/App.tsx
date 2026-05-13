@@ -544,17 +544,17 @@ useEffect(() => {
             </div>
 
             <div className="mt-24 pt-12 border-t border-white/5 text-center text-brand-text-secondary text-sm font-medium">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="relative w-8 h-8 flex items-center justify-center overflow-hidden">
-                  <img src="/logo.png" alt="" className="absolute inset-0 w-full h-full object-contain z-10" onError={(e) => e.currentTarget.style.opacity = '0'} />
-                  <div className="w-6 h-6 bg-brand-accent rounded ring-4 ring-brand-accent/10 flex items-center justify-center">
-                    <Zap className="text-brand-bg w-4 h-4" />
-                  </div>
-                </div>
-                <span className="font-bold text-brand-text-primary">Fluxus Digital</span>
-              </div>
-              {t.footer.text}
-            </div>
+  <div className="flex items-center justify-center gap-3 mb-4">
+    <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden">
+      <img src="/logo.png" alt="" className="absolute inset-0 w-full h-full object-contain z-10" onError={(e) => e.currentTarget.style.opacity = '0'} />
+      <div className="w-9 h-9 bg-brand-accent rounded ring-4 ring-brand-accent/10 flex items-center justify-center">
+        <Zap className="text-brand-bg w-5 h-5" />
+      </div>
+    </div>
+    <span className="font-bold text-brand-text-primary">Fluxus Digital</span>
+  </div>
+  <p>Fluxus Digital © 2003 - 2026. Trabajamos con negocios en múltiples países.</p>
+</div>
           </div>
         </section>
       </main>
