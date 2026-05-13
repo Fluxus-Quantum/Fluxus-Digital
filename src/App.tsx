@@ -553,7 +553,7 @@ useEffect(() => {
     </div>
     <span className="font-bold text-brand-text-primary">Fluxus Digital</span>
   </div>
-  <p>Fluxus Digital © 2003 - 2026. Trabajamos con negocios en múltiples países.</p>
+  <p>Fluxus Digital © 2003 - 2026. | Ecosistemas digitales para negocios en LATAM, USA y Europa.</p>
 </div>
           </div>
         </section>
