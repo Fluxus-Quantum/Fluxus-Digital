@@ -143,10 +143,10 @@ export const CONTENT = {
       ],
     },
     offer: {
-      title: 'Oferta exclusiva de lanzamiento',
-      subtitle: 'Solo para los próximos 5 clientes de este mes.',
-      items: ['Diagnóstico GRATIS', 'Entrega rápida', 'Garantía de satisfacción'],
-      cta: 'Aprovechar ahora',
+      title: 'Tus clientes te están buscando — ¿te están encontrando?',
+      subtitle: 'Solo 3 cupos disponibles este mes para nuevos clientes.',
+      items: ['Diagnóstico gratuito de tu presencia digital', 'Presencia profesional en redes en menos de 7 días', 'Sin contratos largos — resultados desde la primera semana'],
+      cta: 'Quiero mi cupo ahora →',
     },
     footer: {
       text: 'Fluxus Digital © 2024. Trabajamos con negocios en múltiples países.',
