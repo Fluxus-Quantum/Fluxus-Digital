@@ -26,7 +26,7 @@ import { cn } from './lib/utils';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('es');
-  const [currency, setCurrency] = useState<Currency>('USD');
+  const [currency, setCurrency] = useState<Currency>('COP');
   const [activeHero, setActiveHero] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
