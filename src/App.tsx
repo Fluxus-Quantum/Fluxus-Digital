@@ -342,7 +342,7 @@ useEffect(() => {
               <div className="p-8 bg-brand-surface rounded-[2rem] border border-white/5">
                 <h3 className="text-xl font-bold mb-2 text-brand-text-primary">{t.pricing.starter.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{prices.starter} {currency}</span>
+                   <span className="text-4xl font-bold text-brand-text-primary">{p.currencySymbol}{prices.starter.toLocaleString()} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">{lang === 'es' ? '/ pago único' : '/ one-time'}</span>
                 </div>
                 <ul className="space-y-4 mb-8">
@@ -365,7 +365,7 @@ useEffect(() => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">{t.pricing.pro.name}</h3>
                 <div className="flex h-16 items-baseline gap-1 mb-8">
-                   <span className="text-4xl font-bold">{p.currencySymbol}{prices.pro} {currency}</span>
+                   <span className="text-4xl font-bold">{p.currencySymbol}{prices.pro.toLocaleString()} {currency}</span>
                    <span className="text-brand-text-secondary text-sm font-medium">{lang === 'es' ? '/ pago único' : '/ one-time'}</span>
                 </div>
                 <ul className="space-y-4 mb-8">
