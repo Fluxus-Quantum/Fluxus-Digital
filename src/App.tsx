@@ -357,8 +357,9 @@ useEffect(() => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-4 rounded-2xl bg-brand-bg border border-white/10 text-brand-text-primary font-bold hover:border-brand-accent transition-all">
-                  {t.pricing.starter.cta}
+                <a href="https://wa.me/573209403080?text=Hola%2C%20quiero%20contratar%20el%20plan%20Starter%20de%20Fluxus%20Digital" target="_blank" className="w-full py-4 rounded-2xl bg-brand-bg border border-white/10 text-brand-text-primary font-bold hover:border-brand-accent transition-all text-center block">
+  {t.pricing.starter.cta}
+</a>
                 </button>
               </div>
 
@@ -380,8 +381,9 @@ useEffect(() => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-4 rounded-2xl bg-brand-success text-white font-bold hover:bg-brand-accent-hover transition-all shadow-xl shadow-brand-success/20">
-                  {t.pricing.pro.cta}
+                <a href="https://wa.me/573209403080?text=Hola%2C%20quiero%20contratar%20el%20plan%20Pro%20de%20Fluxus%20Digital" target="_blank" className="w-full py-4 rounded-2xl bg-brand-success text-white font-bold hover:bg-brand-accent-hover transition-all shadow-xl shadow-brand-success/20 text-center block">
+  {t.pricing.pro.cta}
+</a>
                 </button>
               </div>
 
@@ -399,8 +401,9 @@ useEffect(() => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-4 rounded-2xl bg-brand-bg border border-white/10 text-brand-text-primary font-bold hover:border-brand-accent transition-all">
-                  {t.pricing.premium.cta}
+                <a href="#contact" className="w-full py-4 rounded-2xl bg-brand-bg border border-white/10 text-brand-text-primary font-bold hover:border-brand-accent transition-all text-center block">
+  {t.pricing.premium.cta}
+</a>
                 </button>
               </div>
             </div>
