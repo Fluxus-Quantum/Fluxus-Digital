@@ -424,7 +424,7 @@ useEffect(() => {
                 <ul className="space-y-4 mb-8 text-sm text-brand-text-secondary">
                   {t.pricing.premium.features.map((f, i) => (
                     <li key={i} className="flex gap-2">
-                       <Check className="w-5 h-5 text-brand-text-secondary/30 shrink-0" />
+                       <Check className="w-5 h-5 text-brand-success shrink-0" />
                        {f}
                     </li>
                   ))}
