@@ -26,7 +26,7 @@ import { cn } from './lib/utils';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('es');
-  const [currency, setCurrency] = useState<Currency>('COP');
+  const [currency, setCurrency] = useState<Currency>(lang === 'es' ? 'COP' : 'USD');
   const [activeHero, setActiveHero] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -60,6 +60,10 @@ useEffect(() => {
     }, 8000);
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    setCurrency(lang === 'es' ? 'COP' : 'USD');
+  }, [lang]);
 
   return (
     <div className="min-h-screen bg-brand-bg text-brand-text-primary font-sans selection:bg-brand-accent selection:text-white">
