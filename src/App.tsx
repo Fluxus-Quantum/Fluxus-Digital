@@ -134,8 +134,8 @@ useEffect(() => {
             </div>
 
             {/* Mobile Menu Toggle */}
-            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X /> : <Menu />}
+            <button className="md:hidden p-2" aria-label="Abrir menú de navegación">
+                  {/* Icono de menú */}
             </button>
           </div>
         </div>
