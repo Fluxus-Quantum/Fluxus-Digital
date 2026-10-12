@@ -135,7 +135,7 @@ useEffect(() => {
 
             {/* Mobile Menu Toggle */}
             <button className="md:hidden p-2" aria-label="Abrir menú de navegación">
-                  {/* Icono de menú */}
+              <Menu className="w-6 h-6 text-brand-text-primary" />
             </button>
           </div>
         </div>
