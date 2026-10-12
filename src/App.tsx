@@ -204,6 +204,9 @@ useEffect(() => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
                     href="https://wa.me/573209403080" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Contactar por WhatsApp"
                     className="flex items-center justify-center gap-2 bg-brand-success text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-brand-accent transition-all group shadow-lg shadow-brand-success/20"
                   >
                     <MessageCircle className="w-5 h-5" />
