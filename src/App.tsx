@@ -113,15 +113,17 @@ useEffect(() => {
               </div>
 
               {/* Currency Selector */}
-              <select 
-                value={currency} 
-                onChange={(e) => setCurrency(e.target.value as Currency)}
-                className="bg-transparent text-sm font-bold border-none focus:ring-0 cursor-pointer text-brand-text-secondary"
-              >
-                <option value="USD" className="bg-brand-surface">USD</option>
-                <option value="EUR" className="bg-brand-surface">EUR</option>
-                <option value="COP" className="bg-brand-surface">COP</option>
-              </select>
+              {/* Currency Selector */}
+        <select 
+          value={currency} 
+          onChange={(e) => setCurrency(e.target.value as Currency)} 
+          className="bg-transparent text-sm font-bold border-none focus:ring-0 cursor-pointer text-brand-text-secondary"
+          translate="no"
+        >
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="COP">COP</option>
+        </select>
 
               <a 
                 href="#contact" 
